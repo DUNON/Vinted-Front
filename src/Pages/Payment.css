@@ -1,0 +1,43 @@
+.payment-container{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    padding: 30px;
+    grid-gap: 30px;
+    background: #EBEDEE;
+}
+.card-payment{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    background-color: #fff;
+    width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 5px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #111;
+}
+.info-payment{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid #ebedee;
+}
+.titre{
+    display: block;
+    font-size: 24px;
+    line-height: 18px;
+    color: #999;
+    padding: 24px 24px 8px;
+}
+.content p{
+    font-size: 16px;
+    line-height: 22px;
+    color: #666;
+    padding: 14px 24px 2px;
+    display: grid;
+    grid: auto/1fr auto;
+    align-items: center;
+}

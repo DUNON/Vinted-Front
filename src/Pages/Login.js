@@ -23,9 +23,11 @@ export default function Login(props) {
             } else {
                 alert("Une erreur est survenue, veuillez ressayer")
             }
-            console.log(response.data);
         } catch (error) {
-            console.log(error);
+            console.log(error.response);
+            if (error.response.status === 401) {
+                alert("Mauvais email et/ou mot de passe")
+            }
         }
 
     }

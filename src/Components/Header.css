@@ -1,0 +1,104 @@
+.header-container{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    width: 1280px;
+    margin: auto;
+    padding: 10px 0;
+}
+.header-logo {
+    height: 40px;
+}
+.header-button {
+    height: 30px;
+    width: 115px;
+    border: 1px solid #2cb1ba;
+    border-radius: 5px;
+    font-family: "Maison Neue";
+    font-size: 12px;
+    outline: none;
+}
+.header-btn-logout{
+    height: 30px;
+    width: 115px;
+    border-radius: 5px;
+    font-family: "Maison Neue";
+    font-size: 12px;
+    outline: none;
+    border: none;
+    margin-right: 30px;
+    background-color: #bf2020;
+    color: #fff;
+}
+.search-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-input {
+    width: 590px;
+    padding-left: 40px;
+    background-color: #f5f6f7;
+    border-radius: 5px;
+    height: 37px;
+    border: none;
+    outline: none;
+    font-family: "Maison Neue";
+    font-size: 16px;
+}
+.search-input-icon {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    color: #bbb;
+}
+
+input[type=checkbox].toggle{
+    display: none;
+}
+
+ .checkbox input[type="checkbox"]{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -2;
+    border: none;
+    outline: none;
+  }
+
+ .checkbox label{
+    width: 42px;
+    height: 20px;
+    border-radius: 10px;
+    align-items: center;
+    display: inline-flex;
+    background-color: #2cb1ba;
+    outline: none;
+    cursor: pointer;
+}
+
+/* ROND */
+.checkbox label:after{
+    content: '⇡';
+    background-color: #fff;
+    border: 1px solid #666;
+    border-radius: 100%;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    transition: background .2s ease-in-out;
+    font-weight: 700;
+}  
+
+
+.checkbox input[type="checkbox"]:checked + label:after{
+  left : 25px;
+}
+
+.checkbox input[type="checkbox"]:checked + label{
+  background: #2cb1ba;
+}
+

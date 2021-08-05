@@ -50,7 +50,8 @@ const handleSubmit= async (event)=>{
                 <br/>
                 <label>email</label>
                 <input
-                type="email" 
+                type="email"
+                required 
                 value={email}
                 onChange={(event)=>{
                     setEmail(event.target.value);
