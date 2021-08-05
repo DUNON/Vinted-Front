@@ -22,7 +22,7 @@ export default function ChechOutForm({title,price}) {
           "https://lereacteur-vinted-api.herokuapp.com/payment",
           {
             token: stripeToken,
-            titre: title,
+            title: title,
             amount: price,
           }
         );
